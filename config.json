@@ -1,17 +1,17 @@
 {
-    modes: {
-        php: {
-            name: "PHP",
-            highlighter: "ace/mode/php",
-            extensions: [
+    "modes": {
+        "php": {
+            "name": "PHP",
+            "highlighter": "ace/mode/php",
+            "extensions": [
                 "php",
                 "php4"
             ],
-            completionTriggers: ["->", "\\", "::"],
-            commands: {
+            "completionTriggers": ["->", "\\", "::"],
+            "commands": {
                 "Tools:Complete:Builtin": {
-                    scriptUrl: "/default/command/builtin_completer.js",
-                    builtins: [
+                    "scriptUrl": "/default/command/builtin_completer.js",
+                    "builtins": [
                         "OCI_Collection",
                         "OCI_Lob",
                         "abs",
@@ -5224,31 +5224,31 @@
                         "zlib_encode",
                         "zlib_get_coding_type"
                     ],
-                    sandbox: "complete"
+                    "sandbox": "complete"
                 },
                 "Tools:Index": {
-                    scriptUrl: "./index.js",
-                    inputs: {
-                        text: true
+                    "fn": "index",
+                    "inputs": {
+                        "text": true
                     },
-                    sandbox: "index"
+                    "sandbox": "index"
                 },
                 "Tools:Check": {
-                    scriptUrl: "./check.js",
-                    inputs: {
-                        text: true
+                    "fn": "check",
+                    "inputs": {
+                        "text": true
                     },
-                    sandbox: "check"
+                    "sandbox": "check"
                 }
             },
-            handlers: {
-                index: [
+            "handlers": {
+                "index": [
                     "Tools:Index"
                 ],
-                complete: [
+                "complete": [
                     "Tools:Complete:Builtin"
                 ],
-                check: [
+                "check": [
                     "Tools:Check"
                 ]
             }

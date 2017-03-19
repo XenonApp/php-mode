@@ -1,5 +1,5 @@
-var symbol = require("zed/symbol");
-var indexToLine = require("zed/util").indexToLine;
+var symbol = xenon.symbol;
+var indexToLine = xenon.util.indexToLine;
 
 var FN_REGEX = /function\s+([a-zA-Z0-9_\$]+)\s*\(([^\)]*)\)/mg;
 var CLASS_REGEX = /class\s+([a-zA-Z0-9_\$]+)\s*\{/mg;
