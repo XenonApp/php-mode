@@ -1,6 +1,6 @@
 {
   "name": "xenon-php-tools",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PHP tools for Xenon.  Includes indexing, completion and linting.",
   "main": "main.js",
   "scripts": {
